@@ -31,4 +31,11 @@ let selectionSort = function(arr){
     return newArr;
 };
 
-$("#output").text("Your array sorted: " + selectionSort(arr).join(" "));
+if(arrLength <= 0){
+    $("#output").text("Your array empty!!!");
+} else {
+    $("#output").text("Your array without sort: " + arr.join(" "));
+    $("#outputTwo").text("Your array sorted: " + selectionSort(arr).join(" "));
+}
+
+
